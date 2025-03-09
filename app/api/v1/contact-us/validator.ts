@@ -18,7 +18,6 @@ export const updateChildSchema = z.object({
 })
 
 export const contactSchema = z.object({
-    reason: z.string(),
     fullNames: z.string().nullable(),
     phoneNumber: z.string().nullable(),
     email: z.string().nullable(),

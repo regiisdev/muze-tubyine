@@ -1,18 +1,22 @@
 'use client';
+import ContactUsImage from '@/assets/gallery/2.jpeg';
 import { Select } from "@/components/select";
 import { axios } from "@/utils/axios";
+import { Shantell_Sans } from 'next/font/google';
 import { useState } from "react";
 
-const REASONS = [
-    { label: 'I want to get in touch with you', value: 'I want to get in touch with you' },
-];
+const shantell_sans = Shantell_Sans({
+    weight: ['500'],
+    subsets: ['latin'],
+})
+
+
 
 export default function Contact() {
     const [formData, setFormData] = useState({
         fullNames: '',
         email: '',
         message: '',
-        reason: '',
         phoneNumber: '',
     });
 
@@ -65,7 +69,6 @@ export default function Contact() {
                         fullNames: '',
                         email: '',
                         message: '',
-                        reason: '',
                         phoneNumber: ""
                     });
                     setSubmissionError(null);  // Reset error
@@ -83,14 +86,14 @@ export default function Contact() {
     return (
         <div>
             <div className="bg-primary/5 "
-                style={{ backgroundImage: `url(https://images.pexels.com/photos/9301887/pexels-photo-9301887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)`, backgroundSize: 'cover' }}>
+                style={{ backgroundImage: `url(${ContactUsImage.src})`, backgroundSize: 'cover' , backgroundPosition : 'bottom'}}>
 
                 <div className=" top-0 left-0  w-full h-full  md:py-40 py-16 md:px-[150px] px-4">
-                    <h1 className="text-black text-4xl md:text-5xl font-bold py-2 pt-6  font-serif">
+                    <h1 className="text-primary text-4xl md:text-5xl font-bold py-2 pt-6  font-serif" style={shantell_sans.style}>
                         Contact us
 
                     </h1>
-                    <p className="text-black mt-2  ">
+                    <p className="text-white mt-2  ">
                         We'd love to hear from you!
                     </p>
                 </div>
@@ -165,23 +168,7 @@ export default function Contact() {
                             />
                         </div>
 
-                        {/* Reason */}
-                        <div>
-                            <label className="block text-[14px] md:text-[16px] font-[400] text-black" htmlFor="reason">
-                                Reason
-                            </label>
-                            <div className="border rounded-md border-gray-300">
-
-                                <Select
-                                    options={REASONS}
-                                    value={formData.reason}
-                                    setValue={(v) => setFormData({ ...formData, reason: v })}
-                                    placeholder="Kindly select your reason"
-                                />
-                            </div>
-                            {formErrors?.reason && <p className="text-red-500 text-sm">{formErrors?.reason}</p>}
-                        </div>
-
+              
                         {/* Message */}
                         <div>
                             <label className="block text-[14px] md:text-[16px] font-[400] text-black" htmlFor="message">

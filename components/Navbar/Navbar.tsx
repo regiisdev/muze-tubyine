@@ -118,13 +118,13 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/about-us"
+              href="/#our-programs"
               className={`block px-4 py-2 ${isActive('/about-us')
                 ? 'text-primary border-b-2 border-primary'
                 : 'text-secondary hover:text-primary'
                 }`}
             >
-              About Us
+              Our  programs
             </Link>
             <Link
               href="/gallery"
