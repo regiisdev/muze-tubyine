@@ -36,7 +36,7 @@ const Footer = () => {
               Our programs
             </span>
           </Link>
-       
+
           <Link href="/gallery" className="hover:text-white relative">
             <span
               className={`after:block after:absolute after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100 ${isActive('/gallery') ? 'underline' : ''
@@ -62,7 +62,7 @@ const Footer = () => {
           className="py-3 w-[891px] border-1"
         />
         <div className='py-5'>
-          Copyright &copy; {new Date().getFullYear()} APEX LMS. All rights reserved.
+          Copyright &copy; {new Date().getFullYear()} Muze Tubyine. All rights reserved.
         </div>
       </div>
     </footer>

@@ -6,7 +6,7 @@ import ContactUsHook from '../../components/contactusHook'
 
 export const metadata: Metadata = {
     ...sharedMetadata,
-    title: "APEX LMS | About Us",
+    title: "Muze Tubyine | About Us",
 };
 
 
@@ -28,13 +28,13 @@ const AboutUs = () => {
                 </div>
             </div>
             <section className="flex flex-col  justify-center py-20 bg-white text-center px-[20vw] px-[150px]">
-                <h2 className="text-primary text-3xl font-bold  ">Know more about APEX LMS</h2>
+                <h2 className="text-primary text-3xl font-bold  ">Know more about Muze Tubyine</h2>
                 {/* <img src={Line} alt="line" className="my-4  w-[88px]" /> */}
                 <p className="text-black text-[24px] font-[500] mb-4  ">
                     learn more about how our services can benefit you.
                 </p>
                 <p className="text-[#AEAEB2] text-[16px] font-[400]  mb-8">
-                    At APEX LMS, we are dedicated to empowering organizations and individuals with the tools and knowledge they need to excel in today's competitive landscape. With a comprehensive suite of services spanning management and leadership consultancy, educational support activities, and specialized office support services, we are your trusted partner in achieving excellence.
+                    At Muze Tubyine, we are dedicated to empowering organizations and individuals with the tools and knowledge they need to excel in today's competitive landscape. With a comprehensive suite of services spanning management and leadership consultancy, educational support activities, and specialized office support services, we are your trusted partner in achieving excellence.
                 </p>
                 <button className=" w-fit mx-auto bg-transparent border-2 border-primary text-primary font-semibold py-4 px-8  py-4 hover:bg-primary hover:text-white transition duration-300 text-[16px]">
                     Contact us

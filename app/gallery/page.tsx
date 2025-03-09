@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     ...sharedMetadata,
-    title: "APEX LMS | Gallery",
+    title: "Muze tubyine | Gallery",
 };
 
 const Page = () => {

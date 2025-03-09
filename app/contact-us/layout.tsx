@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     ...sharedMetadata,
-    title: "APEX LMS | Contact Us",
+    title: "Muze Tubyine | Contact Us",
 };
 
 export default function ContactUsLayout({ children }: { children: React.ReactNode }) {

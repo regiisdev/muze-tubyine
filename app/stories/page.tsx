@@ -11,7 +11,7 @@ import Join from '../../components/contactusHook'
 
 export const metadata: Metadata = {
     ...sharedMetadata,
-    title: "APEX LMS | Stories",
+    title: "Muze Tubyine | Stories",
 };
 
 const Stories = () => {

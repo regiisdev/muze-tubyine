@@ -23,7 +23,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
             }
         })
         const mailerResponse = await mailer.sendMail({
-            from: `Messages | APEX LMS WEBSITE <${process.env.SMTP_USERNAME}>`,
+            from: `Messages | Muze Tubyine WEBSITE <${process.env.SMTP_USERNAME}>`,
             to: env.PERMITTED_EMAILS,
             subject: `Message from ${data.fullNames} | What-IF Website`,
             html: `

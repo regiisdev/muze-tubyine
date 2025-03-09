@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     ...sharedMetadata,
-    title: "APEX LMS | About Us",
+    title: "Muze Tubyine | About Us",
 };
 
 export default function RootLayout({

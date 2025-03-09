@@ -214,7 +214,7 @@ export default function Contact() {
                         {/* Embedded Google Map */}
                         <iframe
                             className="w-full h-full"
-                            title="APEX LMS - Location"
+                            title="Muze Tubyine - Location"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.7809283713642!2d30.0644351!3d-1.9440876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca7ceff3b7fd1%3A0x7b04b9534b4f6f0b!2sKigali%2C%20Rwanda!5e0!3m2!1sen!2srw!4v1694072101505!5m2!1sen!2srw"
                             allowFullScreen
                         ></iframe>
