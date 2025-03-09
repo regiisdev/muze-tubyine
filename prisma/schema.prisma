@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Child {
+  id              String    @id @default(uuid())
+  name            String
+  dob     DateTime
+  profilePhoto String?
+  show            Boolean
+  story           String
+  quote           String?
+  contacts        Contact[]
+}
+
+model Contact {
+  id          String  @id @default(uuid())
+  reason      String
+  isStarred   Boolean @default(false)
+  fullNames   String?
+  phoneNumber String?
+  email       String?
+  isRead      Boolean 
+  message     String
+  child       Child?  @relation(fields: [childId], references: [id])
+  childId     String?
+  createdAt   DateTime @default(now())
+}

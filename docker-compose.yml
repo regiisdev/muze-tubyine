@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  frontend:
+    image: goya-frontend:latest
+    build:
+      context: .
+    ports:
+      - 3081:3000
+    restart: always
