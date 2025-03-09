@@ -26,7 +26,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*
 
 # vercel
 .vercel
@@ -44,3 +43,4 @@ package-lock.json
 
 
 
+config.bat
